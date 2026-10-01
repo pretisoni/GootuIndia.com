@@ -1,1 +1,69 @@
+html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOOTU INDIA | Solar, Lithium Battery & Inverter Solutions</title>
+<meta name="description" content="Solar panels, lithium batteries, solar and hybrid inverters, repair components and tools.">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#18212b;background:#f7fafc}
+header{background:#0b6b3a;color:#fff;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.logo{font-size:28px;font-weight:800}nav a{color:#fff;text-decoration:none;margin:0 10px}
+.hero{padding:70px 6%;background:linear-gradient(135deg,#e8fff1,#fff);text-align:center}
+.hero h1{font-size:42px;margin:0 0 15px;color:#075b32}.hero p{font-size:19px;max-width:750px;margin:0 auto 25px}
+.btn{display:inline-block;background:#f59e0b;color:#111;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:700}
+section{padding:50px 6%}.title{text-align:center;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#fff;padding:25px;border-radius:14px;box-shadow:0 4px 18px #00000012}
+.card h3{color:#075b32}.icon{font-size:42px}
+.contact{background:#0b6b3a;color:#fff;text-align:center}.contact a{color:#fff}
+footer{text-align:center;padding:20px;background:#063d24;color:#fff}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">GOOTU INDIA</div>
+<nav>
+<a href="#products">Products</a><a href="#services">Services</a><a href="#contact">Contact</a>
+</nav>
+</header>
 
+<div class="hero">
+<h1>Solar Energy & Power Solutions</h1>
+<p>Solar Panels, Lithium Batteries, Solar & Hybrid Inverters, Repair Components and Professional Tools.</p>
+<a class="btn" href="#contact">Contact Us</a>
+</div>
+
+<section id="products">
+<h2 class="title">Our Products</h2>
+<div class="grid">
+<div class="card"><div class="icon">☀️</div><h3>Solar Panels</h3><p>Modern high-efficiency solar panels including TOPCon, bifacial and HJT technologies.</p></div>
+<div class="card"><div class="icon">🔋</div><h3>Lithium Batteries</h3><p>Lithium battery solutions for solar and backup power applications.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>Solar & Hybrid Inverters</h3><p>Solar inverters and hybrid inverter solutions for homes and businesses.</p></div>
+<div class="card"><div class="icon">🔧</div><h3>Repair Components & Tools</h3><p>Components, spare parts and tools for solar inverter repair and servicing.</p></div>
+</div>
+</section>
+
+<section id="services">
+<h2 class="title">Our Services</h2>
+<div class="grid">
+<div class="card"><h3>Solar System Solutions</h3><p>Solar system planning and product support.</p></div>
+<div class="card"><h3>Inverter Repair Support</h3><p>Repair components and technical support for inverter servicing.</p></div>
+<div class="card"><h3>Battery Solutions</h3><p>Lithium battery products for suitable power applications.</p></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact GOOTU INDIA</h2>
+<p>For product enquiries, pricing and repair components, contact us.</p>
+<p>📞 <strong>Your WhatsApp / Mobile Number</strong></p>
+<p>📧 Your Email Address</p>
+</section>
+
+<footer>© 2026 GOOTU INDIA. All rights reserved.</footer>
+</body>
+</html>"""
+
+path = Path("/mnt/data/index.html")
+path.write_text(html, encoding="utf-8")
+print(f"[Download the ready website file](sandbox:{path})")
